@@ -34,7 +34,7 @@ pch=pc$stdnum
 #e.g. sed -i "s/$oldname/$newname/" /etc/hosts
 
 sudo sed -i "s/$host/$pch/" /etc/hosts
-echo "The hostname has been changed to" $pch
+echo $pch "is the current hostname."
 
 # If that hostname is not the current hostname, change it using the hostnamectl command and
 #     tell the user you changed the current hostname and they should reboot to make sure the new name takes full effect
